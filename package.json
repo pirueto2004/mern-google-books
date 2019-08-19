@@ -1,0 +1,28 @@
+{
+  "name": "mern-google-books",
+  "version": "1.0.0",
+  "description": "React-based Google Books Search app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pirueto2004/mern-google-books.git"
+  },
+  "author": "Julio Bell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pirueto2004/mern-google-books/issues"
+  },
+  "homepage": "https://github.com/pirueto2004/mern-google-books#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^4.1.2",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.9"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
