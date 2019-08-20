@@ -1,5 +1,5 @@
-require("dotenv").config();
-const axios = require("axios");
+require("../node_modules/dotenv").config();
+const axios = require("../node_modules/axios");
 const db = require("../models");
 const path = require("path");
 
