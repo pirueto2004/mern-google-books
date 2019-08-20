@@ -48,17 +48,17 @@ class Search extends Component {
     }
     return (
       <div>
-        <Jumbotron>
-          <h1 className="display-4">(React) Google Books Search</h1>
+        <Jumbotron className="mb-4">
+          <h1 className="display-4">React-Based Google Books Search App</h1>
           <p className="lead">Search for and save books of interest.</p>
           <hr className="my-4" />
           <p className="lead">
             <Link className="btn btn-default btn-lg" to="/" role="button">New Search</Link>
-            <Link className="btn btn-default btn-lg" to="/saved" role="button">Saved Books</Link>
+            <Link className="btn btn-secondary btn-lg" to="/saved" role="button">Saved Books</Link>
           </p>
         </Jumbotron>
-        <Container>
-          <form>
+        <Container className="mt-4">
+          <form className="mt-4">
             <Input
               value={this.state.title}
               onChange={this.handleInputChange}
