@@ -7,7 +7,7 @@ const app = express()
 // const PORT = process.env.PORT || 3001;
 
 //Environment variables for mongoDB database
-const port = process.env.PORT,
+const port = process.env.PORT || 3001,
   database_name = process.env.DATABASE_NAME,
   mongodbPassword = process.env.MONGOPASSWORD,
   MONGODB_URI = process.env.CONNECTIONSTRING,
