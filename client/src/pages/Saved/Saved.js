@@ -41,6 +41,10 @@ class Saved extends Component {
       .catch(err => console.log(err))
   }
 
+  handleView(link) {
+    alert("Great Shot!")
+  }
+
   render() {
     if (this.state.noResults) {
       return (
@@ -95,10 +99,11 @@ class Saved extends Component {
                   </p>
                 </div>
                 <div className="book-btn-div">
-                  <BookBtn key={book._id + "btn"} btntype="info" id={book._id} disabled={book.link === "/"} onClick={() => (this.window.location.href = `{book.link}`)}>
-                    View
-                  </BookBtn>
+                  <Link href={book.link} target={this.state.target} role="button" rel="noopener noreferrer" className="btn" style={{ marginRight: "6px", backgroundColor: "rgb(33, 150, 243)", color: "white" }}>
+                    View Book
+                  </Link>
                 </div>
+
                 <div className="book-btn-div">
                   <BookBtn key={book._id + "btn"} btntype="danger" id={book._id} disabled={book.link === "/"} onClick={() => this.deleteBook(book._id)}>
                     Delete
