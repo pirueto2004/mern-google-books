@@ -95,7 +95,7 @@ class Saved extends Component {
                   </p>
                 </div>
                 <div className="book-btn-div">
-                  <BookBtn key={book._id + "btn"} btntype="info" id={book._id} disabled={book.link === "/"} href={book.link}>
+                  <BookBtn key={book._id + "btn"} btntype="info" id={book._id} disabled={book.link === "/"} onClick={() => (this.window.location.href = `{book.link}`)}>
                     View
                   </BookBtn>
                 </div>
