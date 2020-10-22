@@ -2,7 +2,7 @@ import React from "react"
 import "./BookBtn.css"
 
 const BookBtn = props => (
-  <button className={`book-btn btn-${props.btntype} btn-lg`} {...props}>
+  <button className={`btn book-btn btn-${props.btntype}`} {...props}>
     {props.children}
   </button>
 )
