@@ -98,13 +98,11 @@ class Saved extends Component {
                     {book.description}
                   </p>
                 </div>
-                <div className="book-btn-div">
-                  <Link href={book.link} target={this.state.target} role="button" rel="noopener noreferrer" className="btn" style={{ marginRight: "6px", backgroundColor: "rgb(33, 150, 243)", color: "white" }}>
-                    View Book
-                  </Link>
-                </div>
 
                 <div className="book-btn-div">
+                  <a key={book._id + "link"} href={book.link} target={this.state.target} role="button" rel="noopener noreferrer" className="btn btn-info">
+                    View Book
+                  </a>
                   <BookBtn key={book._id + "btn"} btntype="danger" id={book._id} disabled={book.link === "/"} onClick={() => this.deleteBook(book._id)}>
                     Delete
                   </BookBtn>
