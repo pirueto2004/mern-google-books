@@ -50,17 +50,17 @@ class Saved extends Component {
       return (
         <div>
           <Jumbotron>
-            <h1 className="display-4">React-Based Google Books Search App</h1>
-            <p className="lead">Search for and annotate books of interest.</p>
+            <h1 className="card-title h1">React-Based Google Books Search App</h1>
+            <p className="blue-grey-text my-4 font-weight-normal">Search for and annotate books of interest.</p>
             <hr className="my-4" />
-            <p className="lead">
+            <div className="lead my-2">
               <Link className="btn btn-default btn-lg" to="/" role="button">
                 New Search
               </Link>
               <Link className="btn btn-secondary btn-lg" to="/saved" role="button">
                 Saved Books
               </Link>
-            </p>
+            </div>
           </Jumbotron>
           <Container>
             <Link to="/">You have no saved books. Click here to find some.</Link>
@@ -72,7 +72,7 @@ class Saved extends Component {
       <div>
         <Jumbotron>
           <h1 className="card-title h1">React-Based Google Books Search App</h1>
-          <p className="text-black-50 my-4 font-weight-bold">Search for and save books of interest.</p>
+          <p className="blue-grey-text my-4 font-weight-normal">Search for and save books of interest.</p>
           <hr className="my-4" />
           <div className="lead my-2">
             <Link className="btn btn-default btn-lg" to="/" role="button">

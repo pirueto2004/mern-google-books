@@ -52,7 +52,7 @@ class Search extends Component {
       <div>
         <Jumbotron>
           <h1 className="card-title h1">React-Based Google Books Search App</h1>
-          <p className="text-black-50 my-4 font-weight-bold">Search for and save books of interest.</p>
+          <p className="blue-grey-text my-4 font-weight-normal">Search for and save books of interest.</p>
           <hr className="my-4" />
           <div className="lead my-2">
             <Link className="btn btn-default btn-lg" to="/" role="button">
