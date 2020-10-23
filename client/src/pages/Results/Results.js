@@ -45,7 +45,7 @@ class Results extends Component {
         <div>
           <Jumbotron>
             <h1 className="card-title h1">React-Based Google Books Search App</h1>
-            <p className="blue-grey-text my-4 font-weight-normal">Search for and annotate books of interest.</p>
+            <h5 className="blue-grey-text my-4 font-weight-normal">Search for and annotate books of interest.</h5>
             <hr className="my-4" />
             <div className="lead my-2">
               <Link className="btn btn-default btn-lg" to="/" role="button">
@@ -66,7 +66,7 @@ class Results extends Component {
       <div>
         <Jumbotron>
           <h1 className="card-title h1">React-Based Google Books Search App</h1>
-          <p className="blue-grey-text my-4 font-weight-normal">Search for and save books of interest.</p>
+          <h5 className="blue-grey-text my-4 font-weight-normal">Search for and save books of interest.</h5>
           <hr className="my-4" />
           <div className="lead my-2">
             <Link className="btn btn-default btn-lg" to="/" role="button">
