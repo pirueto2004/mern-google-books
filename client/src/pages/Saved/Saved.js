@@ -70,18 +70,18 @@ class Saved extends Component {
     }
     return (
       <div>
-        <Jumbotron className="mb-4">
-          <h1 className="display-4">React-Based Google Books Search App</h1>
-          <p className="lead">Search for and save books of interest.</p>
+        <Jumbotron>
+          <h1 className="card-title h1">React-Based Google Books Search App</h1>
+          <p className="text-black-50 my-4 font-weight-bold">Search for and save books of interest.</p>
           <hr className="my-4" />
-          <p className="lead">
+          <div className="lead my-2">
             <Link className="btn btn-default btn-lg" to="/" role="button">
               New Search
             </Link>
             <Link className="btn btn-secondary btn-lg" to="/saved" role="button">
               Saved Books
             </Link>
-          </p>
+          </div>
         </Jumbotron>
         <Container className="mt-4">
           <h2>Your Saved Books</h2>
