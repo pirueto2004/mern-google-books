@@ -88,7 +88,8 @@ class Results extends Component {
                   </a>
                   <p>Written By {book.volumeInfo.authors}</p>
                   <p>
-                    <img align="left" style={{ paddingRight: 10 }} src={book.volumeInfo.imageLinks.smallThumbnail} alt="new" />
+                    {book.volumeInfo.imageLinks ? <img align="left" style={{ paddingRight: 10 }} src={book.volumeInfo.imageLinks.smallThumbnail} alt="new" /> : " "}
+                    {/* <img align="left" style={{ paddingRight: 10 }} src={book.volumeInfo.imageLinks.smallThumbnail} alt="new" /> */}
                     {book.volumeInfo.description}
                   </p>
                 </div>
